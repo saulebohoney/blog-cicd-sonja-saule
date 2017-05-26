@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: XWaIyygjG1uOaq/TFmt1fx05byjSHgw2eO1J4o9aYFgWDP6oYR95cALm4XdxSAxeYz7RoBpw2wPPTnqDr7+qMmQUqcWPho95Qi9fivB6tCaVzYBF5Rv158vj09zy4WAXdHlbLQdhpXXtKTLcHIjLnEnupj9JdRqpxxzMRcnC6ShxY9ugkQ9vH6Ck374PBdnfp3Jy4EW+D4GbEZgmIUYGK1BFnHBr6CLSICcB5CkH1cD2bNmQLXiQ6GQFsLiFGXtpWI5OQ5pmG2v1A0ITUrTPLMkudZ2nisdJbuqnpVt/i/+qJw+PxzHwaAD7gVQRoks7ROWfJ2pAtpYRRP3gDfaV0S6njnfLJjXVCfmk04YansTVGkFTIUY3/+s87iGESX3TKmtKEXryK/aaww7RrC3MUqfp8PkKncxMFa0hQXMy9MzWOmq3kKUEPUwUzTcFpjj056MtJFqVvGhX3+IuBZwqCuRifQx1Tm/UmeB/Go4BODJ+E3+boaIblG/6T7bKNCVDs8YXyHdkD/3EB3egRKl0L7HDW4EyawYq7i8bGbqCzySntvXKKNXTl3Dlop0/JVXZDEfxK4n46c5pmQJikd5FmZZaFrpfUulbdhwb4IZyjdN7YLsPg8eL2GxK+Ssh0bp8ikGlo6oKDQ7BSC5gS4rIp0IhnOIu9KdPLt0L9ZAWqRQ=
+  app: blog-cicd-sonja-saule
+  on:
+    repo: thinkful-c11/blog-cicd-sonja-saule
