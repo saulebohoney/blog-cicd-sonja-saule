@@ -1,0 +1,25 @@
+{
+  "name": "blog-api-jamie-sonja",
+  "version": "1.0.0",
+  "description": "Blog API challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkful-c11/blog-api-jamie-sonja.git"
+  },
+  "author": "Jamie & Sonja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thinkful-c11/blog-api-jamie-sonja/issues"
+  },
+  "homepage": "https://github.com/thinkful-c11/blog-api-jamie-sonja#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "uuid": "^3.0.1"
+  }
+}
