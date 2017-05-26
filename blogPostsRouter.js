@@ -5,16 +5,22 @@ const express = require('express');
 const router = express.Router();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-
+const jsonParser = bodyParser.json();
 
 const {BlogPosts} = require('./models');
 
-const jsonParser = bodyParser.json();
 
-router.use((req,res,next) => {
-  console.log('blog post', new Date(), req.method, req.url);
-  next();
-});
+
+BlogPosts.create(
+  'Raining today', 'Today it is raining; I just saw a water spout. Yikes!' , 'Chris');
+BlogPosts.create('Sunny today', '95 degrees and sunny here', 'Kyle R');
+BlogPosts.create('Expecting rain', 'Maybe that rain from FL will hit here. Not sure yet.', 'William');
+
+
+// router.use((req,res,next) => {
+//   console.log('blog post', new Date(), req.method, req.url);
+//   next();
+// });
 
 router.get('/', (req, res) => {
   res.json(BlogPosts.get());

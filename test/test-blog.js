@@ -26,7 +26,7 @@ describe('Blog', function() {
 
   it('should list Blog posts on GET', function() {
     return chai.request(app)
-      .get('/')
+      .get('/blog-posts')
       .then(function(res) {
         res.should.have.status(200);
         res.should.be.json;
